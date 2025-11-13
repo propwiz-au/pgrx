@@ -9,6 +9,7 @@
 //LICENSE Use of this source code is governed by the MIT license that can be found in the LICENSE file.
 // Polyfill while #![feature(strict_provenance)] is unstable
 use crate::NullableDatum;
+use std::mem::size_of;
 use std::ptr::NonNull;
 
 /// Postgres defines the "Datum" type as uintptr_t, so bindgen decides it is usize.
