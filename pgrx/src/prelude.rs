@@ -34,6 +34,8 @@ pub use crate::datum::{
     Numeric, PgVarlena, PostgresType, Range, RangeBound, RangeSubType, Time, TimeWithTimeZone,
     Timestamp, TimestampWithTimeZone, VariadicArray,
 };
+// Explicitly re-export clock_timestamp for plrust compatibility
+pub use crate::datum::datetime_support::clock_timestamp;
 pub use crate::inoutfuncs::{InOutFuncs, PgVarlenaInOutFuncs};
 
 // Trigger support
